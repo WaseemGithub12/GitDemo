@@ -1,0 +1,31 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "headTest": "npm run test --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run test -- --record --key 69001482-8b30-4ac0-b601-97c9f942d922 --reporter mochawesome"
+  },
+  "author": "Waseem",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress": "^13.6.4",
+    "cypress-iframe": "^1.0.1",
+    "cypress-sql-server": "^1.0.0",
+    "neat-csv": "5.1.0"
+  },
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "exceljs": "^4.4.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/examples/BDD/ecommerce/eCommStepDef.js",
+    "nonGlobalStepDefinitions": true
+  },
+  "description": ""
+}
