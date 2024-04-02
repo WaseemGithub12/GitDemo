@@ -36,6 +36,11 @@ describe('Learning Cypress commands', () => {
        {
         cy.log(logoelement.text())
        })
+      //  cy.get('.brand').then(function(logoelement)
+
+      //  {
+      //   cy.log(logoelement.text())
+      //  })
 
     })
 
